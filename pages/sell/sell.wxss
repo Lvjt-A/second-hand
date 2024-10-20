@@ -1,0 +1,214 @@
+
+
+.A1{
+  display: flex;
+  width: 100%;
+}
+.kk{
+  width: 30rpx;
+  margin-left: 10rpx;
+  color:green;
+}
+.smp{
+  margin-left: 5rpx;
+  width: 180rpx;
+  height: 40rpx;
+}
+.smp1{
+  margin-left: 5rpx;
+  width: 180rpx;
+  height: 40rpx;
+}
+.A1 text{
+  font-size: 28rpx;
+}
+.A1-1{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 100rpx;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1rpx solid  rgb(231, 226, 226);
+}
+.tradename{
+  margin-left: 25rpx;
+  height: 60rpx;
+  font-size: 26rpx;
+  margin-top: 30rpx;
+
+}
+.A2{
+  display: flex;
+  width: 100%;
+}
+.A2 text{
+  font-size: 28rpx;
+}
+.A2-1{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 100rpx;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1rpx solid  rgb(231, 226, 226);
+}
+
+.A3{
+  display: flex;
+  width: 100%;
+  height: 100rpx;
+}
+.A3-1{
+
+margin-top: 10rpx;
+display: flex;
+width: 100%;
+align-items: center;
+border-bottom: 1rpx solid  rgb(231, 226, 226);
+}
+.A3-1 text {
+  font-size: 28rpx;
+}
+.A3-1 .smp2{
+  margin-right:80rpx;
+  margin-left: 40rpx;
+  white-space: nowrap;
+}
+
+.A3-1 .picker{
+ width: 100%;
+}
+
+.picker .empty{
+  border: 2rpx solid #aaa;
+  width: 98%;
+  padding: 10rpx 20rpx;
+  box-sizing: border-box;
+  border-radius: flex;
+  align-items: center;
+  display: flex;
+  justify-content:space-between;
+  color:#aaa;
+}
+.picker .select{
+  border: 2rpx solid #aaa;
+  width: 98%;
+  padding: 10rpx 20rpx;
+  box-sizing: border-box;
+  border-radius: flex;
+  align-items: center;
+  display: flex;
+  justify-content:space-between;
+}
+.yixuan{
+  margin-left: 5rpx;
+  width: 180rpx;
+  height: 40rpx;
+  font-size: 28rpx;
+}
+.picker .empty .dakai{
+   width: 30rpx;
+   height: 30rpx;
+}
+
+.A4{
+  border-bottom: 1rpx solid  rgb(231, 226, 226);
+  height: 100rpx;
+}
+.A4plus{
+  display: flex;
+  flex-direction: row;
+  height: 80rpx;
+}
+.A4-1{
+  margin-top: 30rpx;
+  margin-left: 40rpx;
+  margin-right: 70rpx;
+  font-size: 28rpx;
+  width: 100rpx;
+}
+.A4-2{
+  margin-top: 30rpx;
+  margin-left: 20rpx;
+  width: 60rpx;
+}
+.A5{
+  border-bottom: 1rpx solid  rgb(231, 226, 226);
+  height: 100rpx;
+}
+.A5plus{
+  display: flex;
+  flex-direction: row;
+  height: 80rpx;
+}
+.A5-1{
+  margin-top: 30rpx;
+  margin-left: 40rpx;
+  font-size: 28rpx;
+  width: 500rpx;
+}
+.A5-2{
+  margin-top: 30rpx;
+  margin-left: 20rpx;
+  width: 60rpx;
+}
+
+.A6{
+  height: 100rpx;
+  width: 100%;
+  border-bottom: 1rpx solid  rgb(231, 226, 226);
+  display: flex;
+  flex-direction: row;
+}
+.A6plus{
+  height: 40rpx;
+  width: 100%;
+  margin-top: 30rpx;
+  margin-left: 40rpx;
+}
+.A6plus text{
+  font-size: 28rpx;
+}
+.img_box{
+  border: 2rpx solid #aaa;
+  width: 230rpx;
+  height: 240rpx;
+  padding: 10rpx 20rpx;
+  box-sizing: border-box;
+  border-radius: flex;
+  align-items: center;
+  display: flex;
+  justify-content:space-between;
+}
+.img_box .images .tianjia{
+  width: 200rpx;
+  height: 200rpx;
+
+}
+.img_box .imgs{
+  width: 230rpx;
+  height: 240rpx;
+}
+.img_box .imgs .imgss{
+width:230rpx;
+height: 240rpx;
+
+}
+
+
+.A7-1{
+  margin-left: 285rpx;
+  margin-top: 30rpx;
+  background-color:#f1a417;
+}
+.A8-1{
+  margin-left: 285rpx;
+  margin-top: 30rpx;
+}
+
+
+
+
+

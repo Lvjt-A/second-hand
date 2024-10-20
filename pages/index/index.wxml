@@ -1,0 +1,182 @@
+<!--index.wxml-->
+<view class="Fir">
+    <view class="Head">
+    
+    <!--搜索框-->
+    <view class="search_input">
+        <navigator url="/packageA/pages/search/search" open-type="navigate">
+            搜索
+        </navigator>
+    </view>
+    <!--轮播图-->
+    <view class="Swiper">
+        <swiper circular="true" indicator-dots="true" autoplay="true" interval="3000" duration="500">
+        <swiper-item>
+            <image src="https://6465-demo-6g5onckl234ab3e9-1329775510.tcb.qcloud.la/image/g-1.jpg?sign=cca0211c4af8324b79eda57b8cf6d328&t=1729082875" bind:tap="gradedetail" mode="widthFix"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="/p5/c4.png" bind:tap="gotocap" mode="widthFix"></image>
+        </swiper-item>
+        </swiper>
+    </view>
+
+<view class='mowei'>
+<view class='wodedingdan' bind:tap="catestudy">
+<image src='https://6465-demo-6g5onckl234ab3e9-1329775510.tcb.qcloud.la/image/study.jpg?sign=25dc447358dcbf57e9a54829a07c2b62&t=1729082890'></image>
+<view class='ziti'>学习</view>
+</view>
+<navigator class='wodedingdan' url="/packageA/pages/cateList/clothes/clothes">
+<image src='https://6465-demo-6g5onckl234ab3e9-1329775510.tcb.qcloud.la/image/cloth.jpg?sign=9ec74ff6dd922b8656fb3c2274b6c7ec&t=1729082905'></image>
+<view class='ziti'>服饰</view>
+</navigator>
+<navigator class='wodedingdan' url="/packageA/pages/cateList/food/food">
+<image src='https://6465-demo-6g5onckl234ab3e9-1329775510.tcb.qcloud.la/image/food.jpg?sign=18000ce9399b1b55bd94ca36963a9732&t=1729082916'></image>
+<view class='ziti'>食品</view>
+</navigator>
+<navigator  class='wodedingdan' url="/packageA/pages/cateList/making/making">
+  <image src='https://6465-demo-6g5onckl234ab3e9-1329775510.tcb.qcloud.la/image/making.jpg?sign=96b567ca942d17ea6e7ae66dda2282a5&t=1729082929'></image>
+  <view class='ziti'>美妆</view>
+</navigator>
+<navigator  class='wodedingdan' url="/packageA/pages/cateList/life/life">
+  <image src='https://6465-demo-6g5onckl234ab3e9-1329775510.tcb.qcloud.la/image/life.jpg?sign=c53b179c667c8fa5beaa3441265988a6&t=1729082941'></image>
+  <view class='ziti'>生活</view>
+</navigator>
+</view>
+
+<!--goods1-->
+<!--index.wxml-->
+<view class="container">
+  <view class="left" bindtap="jump1">
+      <view class="tp">
+        <image src="/p2/f1.jpg" style="width:100%;height:{{item.height}}px"></image>
+      </view>
+      <view id="wz">饼干+扁桃仁</view>
+      <view class="container1">
+        <view class="jg-l">￥10</view>
+      </view>
+    </view>
+    <view class="right" bindtap="jump2">
+      <view class="tp">
+        <image src="/p4/m1.jpg" style="width:100%;height:{{item.height}}px"></image>
+      </view>
+      <view id="wz">理肤泉B5面膜</view>
+      <view class="container1">
+        <view class="jg-l">￥30</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="container">  
+    <view class="left" bindtap="jump3">
+      <view class="tp">
+        <image src="/p3/study1.jpg" style="width:100%;height:{{item.height}}px"></image>
+      </view>
+      <view id="wz">线圈单词本</view>
+      <view class="container1">
+        <view class="jg-l">￥5</view>
+      </view>
+    </view>
+    <view class="right" bindtap="jump4">
+      <view class="tp">
+        <image src="/p6/b1.jpg" style="width:100%;height:{{item.height}}px"></image>
+      </view>
+      <view id="wz">大话数据结构</view>
+      <view class="container1">
+        <view class="jg-l">￥10</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="container">  
+    <view class="left" bindtap="jump5">
+      <view class="tp">
+        <image src="/p8/c3.jpg" style="width:100%;height:{{item.height}}px"></image>
+      </view>
+      <view id="wz">学生宿舍椅子</view>
+      <view class="container1">
+        <view class="jg-l">￥80</view>
+      </view>
+    </view>
+    <view class="right" bindtap="jump6">
+      <view class="tp">
+        <image src="/p1/c3.jpg" style="width:100%;height:{{item.height}}px"></image>
+      </view>
+      <view id="wz">灰色连帽卫衣</view>
+      <view class="container1">
+        <view class="jg-l">￥60</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="container">  
+    <view class="left" bindtap="jump7">
+      <view class="tp">
+        <image src="/p5/c1.jpg" style="width:100%;height:{{item.height}}px"></image>
+      </view>
+      <view id="wz">斐乐棒球帽</view>
+      <view class="container1">
+        <view class="jg-l">￥85</view>
+      </view>
+    </view>
+    <view class="right" bindtap="jump8">
+      <view class="tp">
+        <image src="/picture/1.jpg" style="width:100%;height:{{item.height}}px"></image>
+      </view>
+      <view id="wz">可爱毛绒小熊</view>
+      <view class="container1">
+        <view class="jg-l">￥50</view>
+      </view>
+    </view>
+  </view>
+
+
+  <!-- 商品信息 
+<view class="container">
+  <scroll-view scroll-y="true" style="height:{{scrollH}}px" bindscrolltolower="loadImages">
+    <view class="goods" style="width:100%">
+      
+      <view class="img_item">
+        <view wx:for="{{col1}}" wx:key="id" wx:for-item="item" wx:for-index="index">
+          <view class="item_info">
+            
+            <image src="{{item.imageurl}}" style="width:100%;height:{{item.height}}px" data-goodid="{{item.goodId}}" bindtap="onImageTap"></image>
+          </view>
+          <view class="product-name">
+            {{item.name}}
+          </view>
+          <view class="product-price-wrap">
+            <p class="product-price-new">￥{{item.newprice}}</p>
+            <p class="degree">{{item.degree}}新</p>
+          </view>
+        </view>
+      </view>
+      
+      
+      <view class="img_item">
+        <view wx:for="{{col2}}" wx:key="id" wx:for-item="item" wx:for-index="index">
+          <view class="item_info">
+            
+            <image src="{{item.imageurl}}" style="width:100%;height:{{item.height}}px" data-goodid="{{item.goodId}}" bindtap="onImageTap"></image>
+          </view>
+          <view class="product-name">
+            {{item.name}}
+          </view>
+          <view class="product-price-wrap">
+            <p class="product-price-new">￥{{item.newprice}}</p>
+            <p class="degree">{{item.degree}}新</p>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  
+  <view style="display:none">
+    <image wx:for="{{images}}" wx:key="id" id="{{item.id}}" src="{{item.imageurl}}" bindload="onImageLoad"></image>
+  </view>
+</view>
+-->
+
+
+  </view>
+  
+</view>

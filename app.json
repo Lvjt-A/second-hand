@@ -1,0 +1,73 @@
+{
+  "pages": [
+    "pages/index/index",  
+    "pages/user/user",
+    "pages/sell/sell"
+   
+  ],
+  "subPackages": [
+    {
+      "root": "packageA",
+      "name":"分包A",
+      "pages":[
+        "pages/poblish/poblish",
+        "pages/poblishone/poblishone",
+        "components/navigation-bar/navigation-bar",
+        "pages/book/book",
+        "pages/business/business",
+        "pages/business/study/study",
+        "pages/business/clothes/clothes",
+        "pages/business/food/food",
+        "pages/chair/chair",
+        "pages/business/makeup/makeup",
+        "pages/business/shoes/shoes",
+        "pages/business/watch/watch",
+        "pages/business/cap/cap",
+        "pages/infordetail/infordetail",
+        "pages/pubnishdetail/pubnishdetail",
+        "pages/tradedetai/tradedetail",
+        "pages/search/search",
+        "pages/cateList/food/food",
+        "pages/cateList/making/making",
+        "pages/cateList/life/life",
+        "pages/cateList/study/study",
+        "pages/cateList/clothes/clothes"
+      ]
+    }
+  ],
+  "tabBar": {
+    "selectedColor": "#31869B",
+    "list": [
+      {
+        "current": 0,
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/index.png",
+        "selectedIconPath": "/images/index_fill.png"
+      },
+      {
+        "current": 1,
+        "pagePath": "pages/sell/sell",
+        "text": "发布",
+        "iconPath": "/images/edit.png",
+        "selectedIconPath": "/images/edit.png"
+      },
+      {
+        "current": 2,
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "/images/me.png",
+        "selectedIconPath": "/images/me_fill.png"
+      }
+    ]
+  },
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "二手交易平台",
+    "navigationBarBackgroundColor": "#f9a633"
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

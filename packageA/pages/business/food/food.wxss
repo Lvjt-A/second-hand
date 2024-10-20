@@ -1,0 +1,150 @@
+/* pages/business/business.wxss */
+page {
+  background-color: rgb(245, 245, 245);
+}
+/* 设置swiper组件的宽高 */
+swiper{
+  width: 100%;
+  height: 700rpx;
+}
+/* 设置swiper组件里面图片的宽高 */
+swiper image{
+  width: 100%;
+  height: 700rpx;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15rpx;
+  margin-bottom: 0rpx;
+  background-color: rgb(250, 130, 50);
+}
+.detail .title {
+  font:caption;
+  font-size: 55rpx;
+  margin: 10rpx;
+  color: black;
+  text-align: justify;
+  font-weight:600
+}
+.detail .price {
+  color: white;
+  font-size:50rpx;
+  margin: 10rpx;
+  font-weight: 500;
+}
+.type{
+  background-color: white;
+}
+.remark {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15rpx;
+  margin-bottom: 0rpx;
+  background-color: white;
+}
+.remark .title{
+  font-weight: 600;
+  margin: 10rpx;
+  font-size:35rpx;
+  color: rgb(66, 64, 64);
+}
+.remark .detail{
+  display: block;
+  font-size: 30rpx;
+  margin: 20rpx;
+  background-color: white;
+}
+.type{
+  display: flex;
+  flex-direction: column;
+  margin-top: 15rpx;
+  margin-bottom: 0rpx;
+  background-color: white;
+}
+.type .title{
+  font-weight: 600;
+  margin: 10rpx;
+  font-size:35rpx;
+  color: rgb(66, 64, 64);
+  background-color: white;
+}
+.type .detail{
+  display: block;
+  font-size: 30rpx;
+  margin: 20rpx;
+  background-color: white;
+}
+.address {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15rpx;
+  margin-bottom: 0rpx;
+  background-color: white;
+}
+.address .title{
+  font-weight: 600;
+  margin: 10rpx;
+  font-size:35rpx;
+  color: rgb(66, 64, 64);
+  background-color: white;
+}
+.address .detail{
+  display: block;
+  font-size: 30rpx;
+  margin: 20rpx;
+  background-color: white;
+}
+.goods{
+  display: flex;
+  flex-direction: column;
+  margin-top: 15rpx;
+  margin-bottom: 0rpx;
+  background-color: white;
+}
+.goods .title{
+  font-weight: 600;
+  margin: 10rpx;
+  font-size: 35rpx;
+  color: rgb(66, 64, 64);
+  background-color: white;
+}
+.goods .content{
+  display: block;
+  font-size: 30rpx;
+  margin: 20rpx;
+  background-color: white;
+  
+}
+.image_detail {
+  width: 80%;
+  height: 700rpx;
+  background-color: white;
+  margin-top: 4rpx;
+}
+.image-container {
+  display: flex;
+  justify-content: center; 
+  background-color: white;
+  margin-top: 100rpx;
+}
+text {
+  display: block;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  margin: 10rpx;
+}
+.temp {
+  height: 100rpx;
+}
+.goods .button-to-bottom {
+  margin-top: 100rpx;
+  font-size: 39rpx;
+  background: rgb(241, 159, 83);
+  bottom: 40px;
+  display: flex;
+  width: 60%;
+  justify-content: center;
+}

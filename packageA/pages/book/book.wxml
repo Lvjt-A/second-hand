@@ -1,0 +1,51 @@
+<!--pages/business/study/study.wxml-->
+<view>
+    <swiper indicator-dots="true" autoplay="true" interval="2000">
+    <swiper-item>
+    <image class="image" src="/p6/b1.jpg" mode="aspectFill"></image>
+    </swiper-item>
+    <swiper-item>
+    <image class="image" src="/p6/b2.jpg" mode="aspectFill"></image>
+    </swiper-item>
+    </swiper>
+</view>
+
+<scroll-view scroll-y="true">
+  <view class="detail">
+    <text class="title">《大话数据结构》</text>
+    <text class="price">￥10</text>
+  </view>
+  <view class="separate"> </view>
+  <!-- sku选择 -->
+  <view class="separate"></view>
+  <view class="remark">
+    <text class="title">商品评价</text>
+    <text class="detail">本书通俗易懂，图文详实，是学习数据结构的优秀读物</text>
+  </view>
+  <view class="separate"></view>
+  <view class="type">
+  <text class="title">商品种类</text>  
+  <text class="detail">学习用品</text>
+  </view>
+  <view class="separate"></view>
+  <view class="address">
+    <text class="title">发货地</text>
+    <text class="detail">吉林大学北苑一公寓2210室</text>
+ </view>
+ <view class="separate"></view>
+ <view class="goods">
+  <text class="title">商品详情</text>
+  <text class="content">本书是一本适合读者自学数据结构的书籍，本书特色：趣味引导，图文并茂，代码详解，形式新颖。55新</text>
+  <view class="image-container">
+  <block wx:for-items="{{detailImg}}" wx:key="name">
+    <image class="image_detail" src="/p6/b3.jpg" />
+  </block>
+  </view>
+  <view>
+  <button class="button-to-bottom" bindtap="showModal">立即购买</button>
+  <product-cart show="{{show}}"></product-cart>
+  </view>
+ </view>
+</scroll-view>
+
+<!-- 底部悬浮栏 -->

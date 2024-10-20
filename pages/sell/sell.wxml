@@ -1,0 +1,71 @@
+<form bindsubmit="post">
+  <view class="A1">
+    <view class="A1-1">
+      <text class="kk">*</text>
+      <text class="smp">商品名</text>
+      <textarea name="Tradename" cols="30" rows="3" placeholder="请输入商品名" class="tradename" type="text"></textarea>
+    </view>
+  </view>
+
+  <view class="A2">
+    <view class="A2-1">
+      <text class="kk">*</text>
+      <text class="smp1">详细介绍</text>
+      <textarea name="Tradename" cols="30" rows="3" placeholder="请输入商品详细介绍" class="tradename" maxlength="200" value="{{xxjs}}"></textarea>
+    </view>
+  </view>
+  <view class="A3">
+    <view class="A3-1">
+      <text class="smp2">商品类型</text>
+      <picker class="picker" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="picker-item">
+          <view class="select" wx:if="{{ xuan }}">
+           <view class="yixuan" >{{array[index]}}</view>
+          </view>
+          <view class="empty" wx:else>
+            <text>请选择</text>
+            <image class="dakai" src="../../components/img/dakai.png"></image>
+          </view>
+        </view>
+      </picker>
+    </view>
+  </view>
+
+  <view class="A4">
+    <view class="A4plus">
+      <text class="A4-1">发货地</text>
+      <textarea name="Tradename" cols="30" rows="3" placeholder="请输入您的发货地址" class="tradename" maxlength="200" value="{{xxjs}}"></textarea>
+    </view>
+  </view>
+
+  <view class="A5">
+    <view class="A5plus">
+      <text class="A5-1">预售价格</text>
+      <textarea name="Tradename" cols="30" rows="3" placeholder="10" class="A5-2" value="{{xj}}" maxlength="10"></textarea>
+    </view>
+  </view>
+
+  <view class="A6">
+    <view class="A6plus">
+      <text>添加图片介绍 （必填 长按可删除）</text>
+    </view>
+  </view>
+
+
+  <view class="img_box">
+    <view class="imgs" wx:for="{{imgList}}" wx:key="index">
+      <image src="{{item}}" class="imgss" bindlongpress="deleteImage" bindtap="listenerButtonPreviewImage" data-index="{{index}}" />
+    </view>
+    <view class="images" bindtap="upload">
+      <image class="tianjia" src="../../components/img/111.png"  />
+    </view>
+  </view>
+
+  <view class="A7">
+    <button size="mini" class="A7-1" form-type="submit" bindtap="gotopolish">立即发布</button>
+  </view>
+
+  <view class="A8">
+    <button size="mini" class="A8-1" form-type="reset" bindtap="dup">清空内容</button>
+  </view>
+</form>

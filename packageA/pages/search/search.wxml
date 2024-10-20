@@ -1,0 +1,32 @@
+<view style="display: flex; align-items: center;background-color: #f1a417; margin-top: 200rpx;">
+    <input placeholder="请输入关键词" focus="{{inputFocus}}" bindfocus="onFocus" bindblur="onBlur" style="border: 1px solid #ccc; padding: 10rpx; border-radius: 10rpx; flex: 1;background-color: rgb(255, 255, 255);" />
+    <button wx:if="{{showSearch}}"
+      bindtap="quxiao"
+      style="margin-left: 10rpx; padding: 5rpx 10rpx;  color: #fff; border-radius: 5rpx; width: 140rpx;background-color: #f1a417;"
+    >
+      取消
+    </button>
+  </view>
+  <view class="another-container">
+    <view wx:if="{{searchResult.length > 0}}">
+      <!-- 显示搜索结果列表 -->
+      <view class="search-list">
+        <view wx:if="{{showSearch && searchResult.length > 0}}">
+          <!-- 显示搜索结果列表 -->
+          <view class="search-list">
+            <navigator class="article-item" wx:for="{{searchResult}}" wx:key="index"  url="{{item.url}}" data-articleid="{{item.articleid}}">
+              <image class="article-image" src="{{item.image}}" bindtap="onArticleTap"></image>
+              <view class="article-content">
+                <text class="article-title">{{item.title}}</text>
+              </view>
+            </navigator>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view wx:else>
+      <!-- 当搜索结果为空时显示暂无搜索结果 -->
+      <view class="no-result">暂无搜索结果</view>
+    </view>
+  </view>

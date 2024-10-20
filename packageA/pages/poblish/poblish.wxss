@@ -1,0 +1,49 @@
+/* pages/poblish/poblish.wxss */
+.goods {
+  display: flex;
+  flex-direction: column;
+}
+.goodsone{
+  width: 100%;
+  display: flex;
+  padding: 20rpx;
+  background-color:rgb(243, 234, 234);
+  margin-bottom: 5rpx;
+}
+.goodsone image {
+  width: 250rpx;
+  height: 250rpx;
+  
+  border-radius: 20rpx;
+ }
+ .content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20rpx;
+ }
+ 
+ 
+ .content .name1{
+   margin-top: 10rpx;
+   font-size:18px;
+   font-weight: bold;
+   font-family:sans-serif;
+ }
+ .content .jiage{
+   font-size:25px;
+   color:red;
+   font-weight: bold;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   margin-top: 20rpx;
+ }
+ .content .address{
+   margin-top: 10rpx;
+   font-size:15px;
+   font-family:sans-serif;
+ }
+ .content .address1{
+   margin-top: 10rpx;
+   font-size:18px;
+   
+   font-family:sans-serif;
+ }

@@ -1,0 +1,21 @@
+<!--pages/poblishone/poblishone.wxml-->
+
+
+<view class="goods">
+  <view class="goodsone">
+     <image src="/components/img/wode2.png"></image>
+      <view class="content">
+        <text class="name">商品名</text>
+        <text class="name1">微积分</text>
+        <text class="jiage">预售价格</text>
+        <text class="jiage1">¥ 5</text>
+        <text class="xiangqing">详细介绍</text>
+        <text class="xiangqing1">八成新</text>
+        <text class="leixing">商品类型</text>
+        <text class="leixing1">学习用品</text>
+        <text class="address">发货地</text>
+        <text class="address1">南七</text>
+      </view>
+  </view>
+
+</view>

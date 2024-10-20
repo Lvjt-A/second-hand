@@ -1,0 +1,51 @@
+<!--pages/business/study/study.wxml-->
+<view>
+    <swiper indicator-dots="true" autoplay="true" interval="2000">
+    <swiper-item>
+    <image class="image" src="/p5/c1.jpg" mode="aspectFill"></image>
+    </swiper-item>
+    <swiper-item>
+    <image class="image" src="/p5/c2.jpg" mode="aspectFill"></image>
+    </swiper-item>
+    </swiper>
+</view>
+
+<scroll-view scroll-y="true">
+  <view class="detail">
+    <text class="title">斐乐棒球帽</text>
+    <text class="price">￥85</text>
+  </view>
+  <view class="separate"> </view>
+  <!-- sku选择 -->
+  <view class="separate"></view>
+  <view class="remark">
+    <text class="title">商品评价</text>
+    <text class="detail">棒球帽外观漂亮，款式新颖，大小合适，舒适百搭</text>
+  </view>
+  <view class="separate"></view>
+  <view class="type">
+  <text class="title">商品种类</text>  
+  <text class="detail">服装饰品</text>
+  </view>
+  <view class="separate"></view>
+  <view class="address">
+    <text class="title">发货地</text>
+    <text class="detail">吉林大学文苑四公寓281室</text>
+ </view>
+ <view class="separate"></view>
+ <view class="goods">
+  <text class="title">商品详情</text>
+  <text class="content">斐乐棒球帽，春季时尚休闲，材质是仿羊羔绒，颜色是正黑色，帽后调接扣可以按需要调节帽围，99新</text>
+  <view class="image-container">
+  <block wx:for-items="{{detailImg}}" wx:key="name">
+    <image class="image_detail" src="/p5/c1.jpg" />
+  </block>
+  </view>
+  <view>
+  <button class="button-to-bottom" bindtap="showModal">立即购买</button>
+  <product-cart show="{{show}}"></product-cart>
+  </view>
+ </view>
+</scroll-view>
+
+<!-- 底部悬浮栏 -->

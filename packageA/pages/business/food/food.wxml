@@ -1,0 +1,51 @@
+<!--pages/business/study/study.wxml-->
+<view>
+    <swiper indicator-dots="true" autoplay="true" interval="2000">
+    <swiper-item>
+    <image class="image" src="/p2/f1.jpg" mode="aspectFill"></image>
+    </swiper-item>
+    <swiper-item>
+    <image class="image" src="/p2/f2.jpg" mode="aspectFill"></image>
+    </swiper-item>
+    </swiper>
+</view>
+
+<scroll-view scroll-y="true">
+  <view class="detail">
+    <text class="title">饼干+扁桃仁</text>
+    <text class="price">￥10</text>
+  </view>
+  <view class="separate"> </view>
+  <!-- sku选择 -->
+  <view class="separate"></view>
+  <view class="remark">
+    <text class="title">商品评价</text>
+    <text class="detail">巨好吃的休闲零食</text>
+  </view>
+  <view class="separate"></view>
+  <view class="type">
+  <text class="title">商品种类</text>  
+  <text class="detail">食品</text>
+  </view>
+  <view class="separate"></view>
+  <view class="address">
+    <text class="title">发货地</text>
+    <text class="detail">吉林大学文苑三公寓220室</text>
+ </view>
+ <view class="separate"></view>
+ <view class="goods">
+  <text class="title">商品详情</text>
+  <text class="content">山葵味扁桃仁，喜欢芥末味的冲！不会很呛~黑松露火腿惊奇脆片饼干，超级好吃！吃不完了一起出，全新未开封</text>
+  <view class="image-container">
+  <block wx:for-items="{{detailImg}}" wx:key="name">
+    <image class="image_detail" src="/p2/f1.jpg" />
+  </block>
+  </view>
+  <view>
+  <button class="button-to-bottom" bindtap="showModal">立即购买</button>
+  <product-cart show="{{show}}"></product-cart>
+  </view>
+ </view>
+</scroll-view>
+
+<!-- 底部悬浮栏 -->

@@ -1,0 +1,51 @@
+<!--pages/business/study/study.wxml-->
+<view>
+    <swiper indicator-dots="true" autoplay="true" interval="2000">
+    <swiper-item>
+    <image class="image" src="/p3/trade1.jpg" mode="aspectFill"></image>
+    </swiper-item>
+    <swiper-item>
+    <image class="image" src="/p3/trade2.jpg" mode="aspectFill"></image>
+    </swiper-item>
+    </swiper>
+</view>
+
+<scroll-view scroll-y="true">
+  <view class="detail">
+    <text class="title">飞亚达机械手表</text>
+    <text class="price">￥80</text>
+  </view>
+  <view class="separate"> </view>
+  <!-- sku选择 -->
+  <view class="separate"></view>
+  <view class="remark">
+    <text class="title">商品评价</text>
+    <text class="detail">款式时尚，价格便宜，55新</text>
+  </view>
+  <view class="separate"></view>
+  <view class="type">
+  <text class="title">商品种类</text>  
+  <text class="detail">生活用品</text>
+  </view>
+  <view class="separate"></view>
+  <view class="address">
+    <text class="title">发货地</text>
+    <text class="detail">吉林大学南苑五公寓375室</text>
+ </view>
+ <view class="separate"></view>
+ <view class="goods">
+  <text class="title">商品详情</text>
+  <text class="content">55新手表，经典款飞亚达正品手表，周年定制系列，男士商务防水全自动的机械表，很百搭实用</text>
+  <view class="image-container">
+  <block wx:for-items="{{detailImg}}" wx:key="name">
+    <image class="image_detail" src="/p3/trade3.jpg" />
+  </block>
+  </view>
+  <view>
+  <button class="button-to-bottom" bindtap="showModal">立即购买</button>
+  <product-cart show="{{show}}"></product-cart>
+  </view>
+ </view>
+</scroll-view>
+
+<!-- 底部悬浮栏 -->

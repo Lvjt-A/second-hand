@@ -1,0 +1,16 @@
+<!--pages/poblish/poblish.wxml-->
+
+
+
+<view class="goods">
+  <buttun class="goodsone"  bindtap="gotopoblishone">
+     <image src="/components/img/wode2.png"></image>
+      <view class="content">
+        <text class="name1">微积分</text>
+        <text class="jiage">¥ 5</text>
+        <text class="address">商品类型</text>
+        <text class="address1">学习用品</text>
+      </view>
+  </buttun>
+
+</view>

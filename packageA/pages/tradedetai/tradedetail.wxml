@@ -1,0 +1,16 @@
+<!-- tradedetail.wxml -->
+<view class="container">
+  <view class="header">
+    <text class="order-count">成功交易订单数：{{orderCount}}</text>
+  </view>
+
+  <view class="order-list">
+    <navigator class="order-item" wx:for="{{orders}}" wx:key="index" url="{{item.url}}">
+      <image class="order-image" src="{{item.imageUrl}}" mode="aspectFill"></image>
+      <view class="order-details">
+        <text class="order-price">成交金额：¥{{item.price}}\n</text>
+        <text class="order-date">成交时间：{{item.date}}</text>
+      </view>
+    </navigator>
+  </view>
+</view>

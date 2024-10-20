@@ -1,0 +1,17 @@
+<!--pages/cateList/food/food.wxml-->
+<view class="study">
+<!--商品项-->
+<navigator class="goods_item" url="/packageA/pages/business/food/food">
+  <!--左侧图片容器-->
+  <view class="goods_img_wrap">
+    <image mode="widthFix" width="100%" src="/p2/f1.jpg">
+    </image>
+  </view>
+  <!--右侧标题和简介-->
+  
+  <view class="goods_info_wrap">
+    <p class="goods_name">饼干+扁桃仁</p>
+    <p class="goods_price">￥10</p>
+  </view>
+</navigator>
+</view>

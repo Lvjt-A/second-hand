@@ -1,0 +1,70 @@
+/* pages/poblishone/poblishone.wxss */
+.goodsone image {
+  width: 700rpx;
+  height: 700rpx;
+  
+  border-radius: 20rpx;
+ }
+ .content{
+    display: flex;
+    flex-direction: column;
+    margin-left:22rpx;
+    background-color: rgb(247, 250, 247);
+ }
+ .content .name1{
+  margin-top: 18rpx;
+  font-size:22px;
+  font-weight:700;
+  font-family:sans-serif;
+}
+ 
+ .content .name{
+   margin-top: 5rpx;
+   font-size:15px;
+  
+   font-family:sans-serif;
+ }
+ .content .jiage{
+  margin-top: 15rpx;
+  font-size:15px;
+
+  font-family:sans-serif;
+}
+ .content .jiage1{
+   font-size:45px;
+   color:red;
+   font-weight: bold;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   margin-top: 1rpx;
+ }
+ .content .address{
+   margin-top: 30rpx;
+   font-size:15px;
+   font-family:sans-serif;
+ }
+ .content .address1{
+   margin-top: 10rpx;
+   font-size:18px;
+   
+   font-family:sans-serif;
+ }
+ .content .xiangqing{
+  margin-top: 10rpx;
+  font-size:15px;
+  font-family:sans-serif;
+}
+.content .xiangqing1{
+  margin-top: 10rpx;
+  font-size:18px;
+  font-family:sans-serif;
+}
+.content .leixing{
+  margin-top: 30rpx;
+  font-size:15px;
+  font-family:sans-serif;
+}
+.content .leixing1{
+  margin-top: 10rpx;
+  font-size:18px;
+  font-family:sans-serif;
+}

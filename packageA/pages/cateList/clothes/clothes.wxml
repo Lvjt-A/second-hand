@@ -1,0 +1,34 @@
+<!--pages/cateList/clothes/clothes.wxml-->
+<view class="clothes">
+<!--商品项-->
+<navigator class="goods_item" url="/packageA/pages/business/clothes/clothes">
+  <!--左侧图片容器-->
+  <view class="goods_img_wrap">
+    <image mode="widthFix" width="100%" src="/p1/c3.jpg">
+    </image>
+  </view>
+  <!--右侧标题和简介-->
+  
+  <view class="goods_info_wrap">
+    <p class="goods_name">灰色连帽卫衣</p>
+    <p class="goods_price">￥60</p>
+  </view>
+</navigator>
+</view>
+
+<view class="study">
+<!--商品项-->
+<navigator class="goods_item" url="/packageA/pages/business/cap/cap">
+  <!--左侧图片容器-->
+  <view class="goods_img_wrap">
+    <image mode="widthFix" width="100%" src="/p5/c1.jpg">
+    </image>
+  </view>
+  <!--右侧标题和简介-->
+  
+  <view class="goods_info_wrap">
+    <p class="goods_name">斐乐棒球帽</p>
+    <p class="goods_price">￥85</p>
+  </view>
+</navigator>
+</view>

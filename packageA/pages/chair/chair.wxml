@@ -1,0 +1,51 @@
+<!--pages/business/study/study.wxml-->
+<view>
+    <swiper indicator-dots="true" autoplay="true" interval="2000">
+    <swiper-item>
+    <image class="image" src="/p8/c1.jpg" mode="aspectFill"></image>
+    </swiper-item>
+    <swiper-item>
+    <image class="image" src="/p8/c2.jpg" mode="aspectFill"></image>
+    </swiper-item>
+    </swiper>
+</view>
+
+<scroll-view scroll-y="true">
+  <view class="detail">
+    <text class="title">学生宿舍椅子</text>
+    <text class="price">￥50</text>
+  </view>
+  <view class="separate"> </view>
+  <!-- sku选择 -->
+  <view class="separate"></view>
+  <view class="remark">
+    <text class="title">商品评价</text>
+    <text class="detail">安装简易，坐起来感觉超级棒</text>
+  </view>
+  <view class="separate"></view>
+  <view class="type">
+  <text class="title">商品种类</text>  
+  <text class="detail">生活用品</text>
+  </view>
+  <view class="separate"></view>
+  <view class="address">
+    <text class="title">发货地</text>
+    <text class="detail">吉林大学北苑四公寓1008室</text>
+ </view>
+ <view class="separate"></view>
+ <view class="goods">
+  <text class="title">商品详情</text>
+  <text class="content">白色学生宿舍椅子，米白猫抓皮，配有乳胶坐垫</text>
+  <view class="image-container">
+  <block wx:for-items="{{detailImg}}" wx:key="name">
+    <image class="image_detail" src="/p8/c3.jpg" />
+  </block>
+  </view>
+  <view>
+  <button class="button-to-bottom" bindtap="showModal">立即购买</button>
+  <product-cart show="{{show}}"></product-cart>
+  </view>
+ </view>
+</scroll-view>
+
+<!-- 底部悬浮栏 -->

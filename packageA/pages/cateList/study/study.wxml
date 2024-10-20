@@ -1,0 +1,34 @@
+<!--pages/cateList/study/study.wxml-->
+<view class="study">
+<!--商品项-->
+<navigator class="goods_item" url="/packageA/pages/business/study/study">
+  <!--左侧图片容器-->
+  <view class="goods_img_wrap">
+    <image mode="widthFix" width="100%" src="/p3/study1.jpg">
+    </image>
+  </view>
+  <!--右侧标题和简介-->
+  
+  <view class="goods_info_wrap">
+    <p class="goods_name">线圈单词本</p>
+    <p class="goods_price">￥5</p>
+  </view>
+</navigator>
+</view>
+
+<view class="study">
+<!--商品项-->
+<navigator class="goods_item" url="/packageA/pages/book/book">
+  <!--左侧图片容器-->
+  <view class="goods_img_wrap">
+    <image mode="widthFix" width="100%" src="/p6/b1.jpg">
+    </image>
+  </view>
+  <!--右侧标题和简介-->
+  
+  <view class="goods_info_wrap">
+    <p class="goods_name">大话数据结构</p>
+    <p class="goods_price">￥10</p>
+  </view>
+</navigator>
+</view>
